@@ -1,0 +1,162 @@
+:root {
+  --main-color: #ab37c8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-wrap: balance;
+  align-items: center;
+}
+
+a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  border-bottom: 1px solid #a8a8a8;
+  flex-shrink: 0;
+  width: 100%;
+
+  a:hover {
+    color: var(--main-color);
+  }
+}
+
+.selected {
+  font-weight: bold;
+}
+
+/* Main Content */
+main {
+  width: 70%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#main_section {
+  display: flex;
+  flex-direction: column;
+}
+
+#hero_section {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+#hero_section p {
+  font-size: 1.5rem;
+  margin-top: -1rem;
+}
+
+/* Dropdown Section */
+#dropdown {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+select {
+  outline: none;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: auto 1rem;
+}
+
+/* Command Output Section */
+#command_output {
+  overflow: auto;
+}
+
+#command {
+  background-color: #0d121c;
+  color: white;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  width: 90%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+#description {
+  padding: 1rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Button Styling */
+button {
+  background-color: #e8e8e820;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  color: white;
+  align-items: center;
+  border: 1px solid #e8eaed;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+button img {
+  width: 20px;
+  height: 20px;
+  margin-left: 0.2rem;
+}
+
+button:hover {
+  background-color: #e8e8e850;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+}
+
+hr {
+  width: 100%;
+}

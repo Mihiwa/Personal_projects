@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app.css">
+  <title>Latest version of packages/apps</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo header">
+      <img src="./images/citou_purple.svg" alt="">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#main_section" class="selected">Home</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero_section">
+      <h3>Download your packages</h3>
+      <p>Download your apps the way you want</p>
+    </section>
+    <section id="main_section">
+      <div id="dropdown">
+        <div id="package">
+          <label for="app">Install </label>
+          <select name="packages" id="packages">
+            <option value="nodejs">Node.js</option>
+            <option value="neovim">Neovim</option>
+            <option value="python">Python</option>
+            <option value="docker">Docker</option>
+            <option value="git">Git</option>
+            <option value="nginx">Nginx</option>
+            <option value="postgresql">PostgreSQL</option>
+            <option value="vscode">Visual Studio Code</option>
+            <option value="go">Go (Golang)</option>
+            <option value="java">Java (OpenJDK)</option>
+            <option value="ruby">Ruby</option>
+            <option value="mysql">MySQL</option>
+            <option value="redis">Redis</option>
+            <option value="mongodb">MongoDB</option>
+            <option value="php">PHP</option>
+            <option value="perl">Perl</option>
+            <option value="rust">Rust</option>
+            <option value="kubernetes">Kubernetes (kubectl)</option>
+            <option value="ansible">Ansible</option>
+            <option value="terraform">Terraform</option>
+          </select>
+        </div>
+        <div id="version">
+          <label for="version">version </label>
+          <select name="version" id="version">
+          </select>
+        </div>
+        <div id="app">
+          <label for="os">on </label>
+          <select id="os">
+            <option value="linux">Linux</option>
+            <option value="windows">Windows</option>
+            <option value="mac">Mac</option>
+          </select>
+        </div>
+      </div>
+      <div id="command">
+        <div id="command_output">
+          <div>
+            <pre><span style="color: green">$</span> <span id="executable">sudo apt-get install nodejs</span></pre>
+          </div>
+        </div>
+        <hr>
+        <div id="description">
+          <span>Bash</span>
+          <button id="copy-btn">
+            <img src="images/copy.svg" alt="">
+            <label for="">Copy to clipboard</label>
+          </button>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="logo footer">
+      <img src="./images/citou_white.svg" alt="">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#main_section">Home</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+<script src="index.js" defer>
+</script>
+
+</html>
